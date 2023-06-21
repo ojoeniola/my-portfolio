@@ -13,26 +13,25 @@
 <body>
     <div id="header">
         <div class="container">
-            <!-- <nav>
-                <img src="images/Eniola.jpg" alt="">
-            </nav> -->
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#mywork">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
             <div class="header-text">
                 <p>Frontend Developer</p>
                 <h1>Hey!, I'm <span> Eniola.</span></h1>
@@ -45,11 +44,16 @@
                 <div class="about-col-1">
                     <img src="../images/Eniola.jpg" alt="">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2" id="about">
                     <h1 class="abt">About Me</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius cupiditate aliquid, architecto
-                        vero, quia id repellat illo temporibus consequatur ullam corporis facilis quisquam mollitia.
-                        Neque, accusantium! Quo quasi soluta ipsam.</p>
+                    <p>Hello! My name is Eniola. I enjoy coverting ideas into reality and building life time solutions. I have had the priviledge 
+                        to work as a Frontend Developer to build HoFund , a Housing website that allows not only for housing affordabilty among others, Teresco
+                        and others. <br>
+                        
+                        what I work with : <br>
+                        Languages: Html. Css, Javascript.
+                        Technologies: Reactjs, Github, Git, Netlify, Bosstrap, Wordpress.
+                    </p>
                     <div class="abt-2">
                         <p class="skill-links sub-link" onclick="opentab('skills')">Skills</p>
                         <p class="skill-links" onclick="opentab('experience')">Experience</p>
@@ -81,44 +85,41 @@
         </div>
     </div>
     <div id="services">
-        <div class="container">
+        <div class="container" id="services">
             <h1 class="abt">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-brands fa-css3"></i>
+
                     <h2>
-                        Web Design
+                        CSS
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto in officia sapiente,
-                        tenetur velit error, recusandae possimus inventore voluptas quae impedit quas optio nam maiores
-                        ipsam rerum aliquam beatae.
+                        Functions that invoke special data processing that returns a CSS value 
+                        for a CSS property. Server-Side and End-User Representation. Web Maintenance,
+                        Ease of Accessibility. 
                     </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <i class="fa-brands fa-js"></i>
                     <h2>
-                        Web Development
+                        JAVASCRIPT
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto in officia sapiente,
-                        tenetur velit
-                        error, recusandae possimus inventore voluptas quae impedit quas optio nam maiores ipsam rerum
-                        aliquam beatae.
+                        Server Applications, Web servers. Statement that performs a task or calculate a value, building 
+                        of web applications. Creating dynamically updating content, control multimedia, animate images. Enables 
+                        creation of reusable UI components and manage state more efficiently.
                     </p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-brands fa-apple"></i>
+                    <i class="fa-brands fa-react"></i>
                     <h2>
-                        APIs
+                        React
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima architecto in officia sapiente,
-                        tenetur velit
-                        error, recusandae possimus inventore voluptas quae impedit quas optio nam maiores ipsam rerum
-                        aliquam beatae.
+                    Desktop applications, mobile and versatile framework for cross-platforms. Mobile app development . 
                     </p>
                     <a href="#">Learn more</a>
                 </div>
@@ -126,7 +127,7 @@
         </div>
     </div>
     <div id="portfolio">
-        <div class="container">
+        <div class="container" id="mywork">
             <h1 class="abt">My Work.</h1>
             <div class="work-list">
                 <div class="work">
@@ -167,12 +168,12 @@
             </div>
         </div>
         <div id="Contact">
-            <div class="container">
+            <div class="container" id="contact">
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="abt">Contact Me</h1>
                         <p><i class="fa-solid fa-paper-plane"></i>ojoeniolaesther@gmail.com</p>
-                        <p><i class="fa-sharp fa-solid fa-phone"></i>08030040001</p>
+                        <p><i class="fa-sharp fa-solid fa-phone"></i>08167480247</p>
                         <div class="social-icons">
                             <a href="https://www.facebook.com/tholuwarlope?mibextid=LQQJ4d"><i
                                     class="fa-brands fa-facebook"></i></a>
@@ -199,23 +200,6 @@
             <p>Copyright © Eniola. Made with <i class="fa-solid fa-heart"></i> by Ojo Eniola  </p>
         </div>
     </div>
-
-
-    <script>
-        var skilllinks = document.getElementsByClassName(skill - links);
-        var skillparent = document.getElementsByClassName(skill - parent);
-
-        function opentab(tabname) {
-            for (skill - link of skill - links) {
-                skill - link.classList.remove("sub-link");
-            }
-            for (skill - parent of skill - parents) {
-                skill - parent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("sub-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
 </body>
 
 </html>
